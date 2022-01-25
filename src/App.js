@@ -32,7 +32,7 @@ function App() {
       <ExpenseItem 
         title={expenseItems[0].title} 
         amount={expenseItems[0].amount} 
-        date={expenseItems[0].date}
+        date={expenseItems[1].date}
       />
       <ExpenseItem 
         title={expenseItems[1].title} 
