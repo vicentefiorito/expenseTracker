@@ -1,4 +1,4 @@
-#Expense Tracker
+# Expense Tracker
 
 Simple React Practice project implementing an expense tracker.
 
