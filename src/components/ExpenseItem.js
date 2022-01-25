@@ -1,13 +1,16 @@
 import React from "react";
-import reactDom from "react-dom";
+import './ExpenseItem.css';
+import ExpenseDate from "./ExpenseDate";
 
-function ExpenseItem() {
+function ExpenseItem(props) {
+   
+
     return (
-        <div>
-            <div> January 25th 2022</div>
-            <div>
-                <h2>Manga</h2>
-                <div>75.24</div>
+        <div className="expense-item">
+            <ExpenseDate date={props.date} />
+            <div className="expense-item__description">
+                <h2>{props.title}</h2>
+                <div className="expense-item__price">${props.amount}</div>
             </div>
         </div>
      );
