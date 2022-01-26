@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import ExpensesDisplay from './components/ExpensesDisplay';
+import ExpensesDisplay from './components/Expenses/ExpensesDisplay';
+import NewExpense from './components/NewExpense/NewExpense';
 
 function App() {
     //adds the expense items as an array
@@ -28,7 +29,7 @@ function App() {
     ]
   return (
     <div className="App">
-     <h2>Let's get started</h2>
+     <NewExpense/>
       <ExpensesDisplay expenses={expenseItems}/>
     </div>
   );
